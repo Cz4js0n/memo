@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta lang="PL">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>MEMO - Strona Główna</title>
+</head>
+<body>
+    <div class="gora">
+        <h1>MEMO</h1>
+    </div>
+    <div class="srodek">
+        <form>
+            <label for="kolumny">Podaj ilość kolumn:</label>
+            <input type="number" id="kolumny" min="1" max="8">
+            <span>(Max 8)</span>
+            <br>
+            <label for="rzedy">Podaj ilość rzędów:</label>
+            <input type="number" id="rzedy" min="1" max="8">
+            <span>(Max 8)</span>
+            <br>
+        </form>
+        <br>
+    </div>
+    <div>
+        <button onclick="startgry()" id="button1">Start</button> 
+    </div>
+    <div id="popup" class="popup">
+        <h2>MEMO</h2>
+        <div id="tablica"></div>
+        <button onclick="document.getElementById('popup').style.display='none'" id="button2">&#9747;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
