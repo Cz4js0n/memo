@@ -46,6 +46,9 @@ function sprawdzObrazek(maxwynik) {
     console.log(kolumny);
     console.log(rzedy);
     if(wynik == maxwynik){
-        setTimeout("alert('Wygrałeś!');",1000);
+        setTimeout(function(){
+            alert('Wygrałeś!');
+            location.reload();
+        }, 1000);
     }
 }
